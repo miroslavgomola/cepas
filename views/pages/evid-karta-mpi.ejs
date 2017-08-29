@@ -1,0 +1,321 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+   <% include ../partials/header %>
+
+<main>
+<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbspEVIDENČNÁ KARTA<br>
+METÓDY PACHOVEJ IDENTIFIKÁCIE</h3>
+</main>
+
+<form>Dátum zaistenia PS:&nbsp
+  <input class="datetime" type="datetime-local" name="Dátum zaistenia PS">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrijaté na pracovisku MPI dňa:&nbsp
+  <input class="datetime" type="datetime-local" name="Prijaté na pracovisku MPI dňa"><p>
+  </p>Spôsob doručenia PS na pracovisko MPI:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspVAZBA**&nbsp&nbsp
+  <input type="checkbox" name="vazba"><br><p>
+  </p>
+  <input type="radio" name="Spôsob" value="kurier">KURIER<input type="radio" name="Spôsob" value="Osobne">Osobne - kto:
+  <select class="frame" name="technici">
+    <option value=""></option>
+    <option value="Fajčík">Fajčík</option>
+    <option value="Molnár">Molnár</option>
+  </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  VYRADENÉ DŇA:&nbsp<input class="datetime" type="datetime-local"><br><p>
+  </p>
+  Útvar PZ ktorý PS zaistil:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspČVS:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspZločinecká trieda:**
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspVýška škody:<br>
+  <select class="frame" name="utvary">
+    <option value=""></option>
+    <option value="KR PZ BB">Krajské riaditeľstvo PZ Banská Bystrica</option>
+    <<option value="OR PZ VK">Okresné riaditeľstvo PZ Veľký Krtíš</option>
+  </select>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <input class="frame" type="text" name="cvs" value="">
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <select class="frame" name="trieda">
+    <option value=""></option>
+    <option value="A1">A1</option>
+    <option value="A2">A2</option>
+    <option value="B1">B1</option>
+    <option value="D1">D1</option>
+    <option value="D2">D2</option>
+    <option value="D7">D7</option>
+    <option value="INA">INÁ</option>
+  </select>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <input class="frame" type="text" name="skoda" value=""><br><p>
+  </p>
+  Výsledok porovania zaslať útvaru / k číslu:&nbsp <select class="frame" name="utvary">
+    <option value=""></option>
+    <option value="KR PZ BB">Krajské riaditeľstvo PZ Banská Bystrica</option>
+    <option value="OR PZ VK">Okresné riaditeľstvo PZ Veľký Krtíš</option>
+  </select>&nbsp/&nbsp<input class="frame" type="text" name="" value=""><br><p>
+  </p>
+  Číslo PS:&nbsp<select class="frame" name="cislops">
+    <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>&nbspMiesto zaistenia PS:&nbsp<input class="zps" type="text">&nbspAbsorbent PORÓZNY:
+  &nbsp<select class="frame" name="porozita">
+    <option value=""></option>
+    <option value="ano">Áno</option>
+    <option value="nie">Nie</option>
+  </select><br>
+  Číslo PS:&nbsp<select class="frame" name="cislops">
+    <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>&nbspMiesto zaistenia PS:&nbsp<input class="zps" type="text">&nbspAbsorbent PORÓZNY:
+  &nbsp<select class="frame" name="porozita">
+    <option value=""></option>
+    <option value="ano">Áno</option>
+    <option value="nie">Nie</option>
+  </select><br>
+  Číslo PS:&nbsp<select class="frame" name="cislops">
+    <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>&nbspMiesto zaistenia PS:&nbsp<input class="zps" type="text">&nbspAbsorbent PORÓZNY:
+  &nbsp<select class="frame" name="porozita">
+    <option value=""></option>
+    <option value="ano">Áno</option>
+    <option value="nie">Nie</option>
+  </select><br>
+  Číslo PS:&nbsp<select class="frame" name="cislops">
+    <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>&nbspMiesto zaistenia PS:&nbsp<input class="zps" type="text">&nbspAbsorbent PORÓZNY:
+  &nbsp<select class="frame" name="porozita">
+    <option value=""></option>
+    <option value="ano">Áno</option>
+    <option value="nie">Nie</option>
+  </select><br>
+  Číslo PS:&nbsp<select class="frame" name="cislops">
+    <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>&nbspMiesto zaistenia PS:&nbsp<input class="zps" type="text">&nbspAbsorbent PORÓZNY:
+  &nbsp<select class="frame" name="porozita">
+    <option value=""></option>
+    <option value="ano">Áno</option>
+    <option value="nie">Nie</option>
+  </select><br>
+  Číslo PS:&nbsp<select class="frame" name="cislops">
+    <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>&nbspMiesto zaistenia PS:&nbsp<input class="zps" type="text">&nbspAbsorbent PORÓZNY:
+  &nbsp<select class="frame" name="porozita">
+    <option value=""></option>
+    <option value="ano">Áno</option>
+    <option value="nie">Nie</option>
+  </select><p>
+  </p>
+  <button onclick="myCreateFunction()">Pridaj PS</button>
+  <button onclick="myCreateFunction()">Odober PS</button><br><p>
+  </p><h4>Klimatické podmienky</h4>
+  &nbspČíslo PS:&nbsp<select class="frame" name="cislops">
+    <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>&nbspČasový úsek po zaistenie PS:&nbsp<select class="frame" name="hod">
+    <option value=""></option>
+    <option value="do24">Do 24 hod.</option>
+    <option value="do48">Do 48 hod.</option>
+    <option value="nad24">Nad 48 hod.</option>
+  </select>&nbsp
+  Miesto zaistenia:&nbsp<select class="frame" name="plc">
+    <option value=""></option>
+    <option value="Interér">Interér</option>
+    <option value="Exteriér">Exteriér</option>
+  </select>
+  Poveternostné podmienky:&nbsp<select class="frame" name="plc">
+    <option value=""></option>
+    <option value="Chladno">Chladno</option>
+    <option value="Sucho">Sucho</option>
+    <option value="Dážď">Dážď</option>
+  </select>
+  Teplota:&nbsp<input type="text" class="tbox">&nbsp°C<br>
+  Číslo PS:&nbsp<select class="frame" name="cislops">
+    <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>&nbspČasový úsek po zaistenie PS:&nbsp<select class="frame" name="hod">
+    <option value=""></option>
+    <option value="do24">Do 24 hod.</option>
+    <option value="do48">Do 48 hod.</option>
+    <option value="nad24">Nad 48 hod.</option>
+  </select>&nbsp
+  Miesto zaistenia:&nbsp<select class="frame" name="plc">
+    <option value=""></option>
+    <option value="Interér">Interér</option>
+    <option value="Exteriér">Exteriér</option>
+  </select>
+  Poveternostné podmienky:&nbsp<select class="frame" name="plc">
+    <option value=""></option>
+    <option value="Chladno">Chladno</option>
+    <option value="Sucho">Sucho</option>
+    <option value="Dážď">Dážď</option>
+  </select>
+  Teplota:&nbsp<input type="text" class="tbox">&nbsp°C<br>
+  Číslo PS:&nbsp<select class="frame" name="cislops">
+    <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>&nbspČasový úsek po zaistenie PS:&nbsp<select class="frame" name="hod">
+    <option value=""></option>
+    <option value="do24">Do 24 hod.</option>
+    <option value="do48">Do 48 hod.</option>
+    <option value="nad24">Nad 48 hod.</option>
+  </select>&nbsp
+  Miesto zaistenia:&nbsp<select class="frame" name="plc">
+    <option value=""></option>
+    <option value="Interér">Interér</option>
+    <option value="Exteriér">Exteriér</option>
+  </select>
+  Poveternostné podmienky:&nbsp<select class="frame" name="plc">
+    <option value=""></option>
+    <option value="Chladno">Chladno</option>
+    <option value="Sucho">Sucho</option>
+    <option value="Dážď">Dážď</option>
+  </select>
+  Teplota:&nbsp<input type="text" class="tbox">&nbsp°C<br>
+  Číslo PS:&nbsp<select class="frame" name="cislops">
+    <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>&nbspČasový úsek po zaistenie PS:&nbsp<select class="frame" name="hod">
+    <option value=""></option>
+    <option value="do24">Do 24 hod.</option>
+    <option value="do48">Do 48 hod.</option>
+    <option value="nad24">Nad 48 hod.</option>
+  </select>&nbsp
+  Miesto zaistenia:&nbsp<select class="frame" name="plc">
+    <option value=""></option>
+    <option value="Interér">Interér</option>
+    <option value="Exteriér">Exteriér</option>
+  </select>
+  Poveternostné podmienky:&nbsp<select class="frame" name="plc">
+    <option value=""></option>
+    <option value="Chladno">Chladno</option>
+    <option value="Sucho">Sucho</option>
+    <option value="Dážď">Dážď</option>
+  </select>
+  Teplota:&nbsp<input type="text" class="tbox">&nbsp°C<br>
+  <p></p>
+RUŠIVÉ VPLYVY:&nbsp <input type="text" class="zps" value="">&nbsp&nbspSTUPEŇ:&nbsp
+<select class="frame" name="trieda">
+  <option value="1"></option>
+  <option value="1">1</option>
+  <option value="1">1</option>
+  <option value="1">1</option>
+</select><br><p>
+</p>
+POPIS SKUTKU <br>
+<textarea class="frame" rows="6" cols="100" name="comment" form="usrform">
+Dátum a čas spáchania trestného činu, kto, čo, miesto a stručná charakteristika.</textarea><br><p>
+</p><br>
+<input type="text" name="" value="">&nbsp<button>Priradenie kódu</button>
+PS zaistil kriminalistický technik:&nbsp<input type="text">&nbsp
+<button type="button" name="button">Zápis PS</button><br><p></p>
+</form>
+
+    <% include ../partials/footer %>
+</body>
+</html>

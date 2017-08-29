@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulár</title>
+</head>
+
+<body>
+
+<form action="obslouzit_formular.php" method="post">
+<fieldset><legend>Zadajte svoje osobne informacie:</legend>
+<input type="hidden" name="meno" value="Peter" />
+<p><b>Meno:</b><input type="text" name="meno" size="20" maxlength="40" /></p>
+<p><b>Adresa:</b><input type="text" name="adresa" size="40" maxlength="60" /></p>
+<p><b>Pohlavie:</b><input type="radio" name="pohlavie" value="M" /> Muž
+<input type="radio" name="pohlavie" value="F" /> Žena</p>
+<p><b>Vek:</b>
+<select name="vek">
+	<option value="0-30">Mladsi nez 30</option>
+	<option value="30-60">Medzi 30 a 60</option>
+	<option value="60+">Viac ako 60</option>
+</select></p>
+<p><b>Komentáre:</b> <textarea name="komentare" rows="3" cols="50"></textarea></p>
+</fieldset>
+<div align="center"><input type="submit" name="odoslat" value="odoslat informacie" /></div>
+</form>
+
+</body>
+</html>

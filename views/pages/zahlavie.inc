@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>CEPAS</title>
+
+<!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="css/cepas.css">
+<style>
+  body    { padding-top:50px; }
+</style>
+</html>

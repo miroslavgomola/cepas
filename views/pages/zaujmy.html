@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>zaujmy</title>
+</head>
+
+<body>
+
+<form action="obslouzit_zaujmy.php" method="post">
+
+<fieldset><legend>Zadajte do nasledujuceho formulara pozadovane informacie:</legend>
+<p><b>Meno:</b><input type="text" name="meno" size="20" maxlenght="40" /></p>
+<p><b>Zaujmy:</b>
+<input type="checkbox" name="zaujmy[]" value="hudba" /> Hudba
+<input type="checkbox" name="zaujmy[]" value="filmy" /> Filmy
+<input type="checkbox" name="zaujmy[]" value="knihy" /> Knihy
+<input type="checkbox" name="zaujmy[]" value="Lyzovanie" /> Lyzovanie
+<input type="checkbox" name="zaujmy[]" value="Sport" /> Sport
+</p>
+
+</fieldset>
+<div align="center"><input type="submit" name="odoslat" value="Odoslat informacie" /></div>
+</form>
+</body>
+</html>

@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+body {
+	background-color: antiquewhite;
+	background-repeat: repeat-x;
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	text-align: center;
+}
+
+#kontajner {
+	background-color: antiquewhite;
+	border: thin solid black;
+	max-width: 77em;
+	min-width: 22em;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1ex 1ex 1ex 1ex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-size: 100%;
+	font-weight: bold;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 1ex 1ex 1ex 1ex;
+	color: darkgreen;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.title a {
+	text-decoration: none;
+	color: black;
+}
+
+.logo {
+	text-align: center;
+	padding: 1ex 1ex 1ex 77ex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+
+.logopz {
+	text-align: center;
+	padding: 1ex 1ex 1ex 1ex;
+	top: 0;
+	left: 0;
+
+}
+
+.logo img {
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu {
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 1ex 1ex 1ex 1ex;
+	background-color: antiquewhite;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.dropbtn {
+    background-color: forestgreen;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+		text-decoration: none;
+}
+
+.dropbtn a {
+	color: white;
+	text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+		text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #1DED41}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #1DED41;
+}
+
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.other {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+title1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-ps {
+	background-color: forestgreen;
+	width: 80px;
+	height: 80px;
+	font-size: 16px;
+}
+
+.btn-ps a {
+	text-decoration: none;
+	color: white;
+}
+
+.btn-pps {
+	background-color: forestgreen;
+	width: 80px;
+	height: 80px;
+	font-size: 16px;
+	color: white;
+}
+
+.btn-pps a {
+	text-decoration: none;
+	color: white;
+}
+
+form {
+	text-align: center;
+	font-weight: bold;
+}
+
+.zps {
+    border-width: thin;
+		border-style: solid;
+		width: 400px;
+}
+
+.datetime {
+	border: thin solid black;
+}
+
+.frame {
+	border: thin solid black;
+}
+
+.tbox {
+	max-width: 40px;
+	border: thin solid black;
+}
+
+.bydlisko {
+	width: 400px;
+}
+
+.tabulka {
+	align-items: left;
+	border: thin solid black;
+}
+
+.submit {
+	background-color: white;
+	width: 80px;
+	height: 80px;
+	font-size: 16px;
+	color: white;
+}
+
+.submit:hover .submit {background-color: #1DED41}
