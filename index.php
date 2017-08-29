@@ -18,7 +18,7 @@ include ('views/pages/zahlavie2.inc')
         <b>Oddelenie metódy pachovej identifikácie Banská Bystrica</b>
       </div>
       <div align="center" class="other">
-          Slovenské s Ďarmoty č. 55
+          Slovenské Ďarmoty č. 55
       </div>
       <p>
       </p>
